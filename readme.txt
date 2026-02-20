@@ -8,3 +8,6 @@ git commit -m "I have made some changes to the files" (to commit into local repo
 git reset --soft HEAD~1 (commit is removed, changes remain in the staging area, no files are modified)
 git reset HEAD (commit is removed, changes remain in files, changes are unstaged)
 git revert HEAD (if the commit was pushed to a remote repo, this creates a new commit that reverses the last one)
+git log (to view log)
+git checkout <branch> (to create branch or move to a branch)
+
