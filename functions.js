@@ -32,3 +32,23 @@ function devide(a, b){
 console.log(devide(10, 2)); // Output: 5
 console.log(devide(10, 0)); // Output: "Error: Division by zero is not allowed"
 
+// general form of a function
+// function name(parameters) {
+//     // code to be executed
+//     return result;
+// } 
+
+//generator functions
+//generator functions are a special type of function that can be paused and resumed, allowing them to generate a sequence of values on-the-fly. They are defined using the `function*` syntax and use the `yield` keyword to produce values.
+function* countUpTo(n) {
+    for (let i = 1; i <= n; i++) {
+        yield i;
+    }
+}
+const counter = countUpTo(5);
+console.log(counter.next().value); // Output: 1
+console.log(counter.next().value); // Output: 2
+console.log(counter.next().value); // Output: 3
+console.log(counter.next().value); // Output: 4
+console.log(counter.next().value); // Output: 5
+console.log(counter.next().value); // Output: undefined, since the generator has finished yielding values

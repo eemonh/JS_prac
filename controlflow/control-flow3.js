@@ -82,3 +82,70 @@ let ar = ['red', 'green', 'blue', 'yellow', 'purple'];
 for (let color of ar) {
     console.log(color);
 }
+
+let numberss = [1, 2, 3, 4, 5];
+for(let num of numberss){
+    console.log(num);
+}
+
+//for of loop can also be used to iterate over the characters of a string.
+let str = "Hello, World!";
+for (let char of str) {
+    console.log(char);
+}
+
+//for of loop can also be used to iterate over the entries of a map.
+let map = new Map();
+map.set('a', 1);
+map.set('b', 2);
+map.set('c', 3);
+for (let entry of map) {
+    console.log(entry);
+}
+
+//for of loop can also be used to iterate over the values of a set.
+let set = new Set();
+set.add(1);
+set.add(2);
+set.add(3);
+for (let value of set) {
+    console.log(value);
+}
+
+//for of loop can also be used to iterate over the elements of a generator function.
+function* generator() {
+    yield 1;
+    yield 2;
+    yield 3;
+}
+for (let value of generator()) {
+    console.log(value);
+}
+
+//for of loop can also be used to iterate over the elements of a custom iterable object.
+let iterable = {
+    *[Symbol.iterator]() {
+        yield 1;
+        yield 2;
+        yield 3;
+    }
+};
+for (let value of iterable) {
+    console.log(value);
+}
+
+// break and continue statements
+//break statement is used to exit a loop prematurely, while continue statement is used to skip the current iteration and move to the next iteration of the loop.
+for (let i = 0; i < 10; i++) {
+    if (i === 5) {
+        break; // exit the loop when i is 5
+    }
+    console.log(i);
+}
+for (let i = 0; i < 10; i++) {
+    if (i === 5) {
+        continue;
+    }
+    console.log(i);
+}
+
