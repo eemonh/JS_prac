@@ -1,3 +1,19 @@
 git init (to initialize the directory)
 git add --all/ git add -A (to stage all)
+<<<<<<< HEAD
 git reset (to remove files from stage)
+=======
+git reset (to remove files from stage)
+ "git rm --cached <file>..." (to unstage)
+git add. (to stage the change in current directory)
+git add *  (only stages new or modified files but not deleted ones.)
+git commit -m "I have made some changes to the files" (to commit into local repository)
+git reset --soft HEAD~1 (commit is removed, changes remain in the staging area, no files are modified)
+git reset HEAD (commit is removed, changes remain in files, changes are unstaged)
+git revert HEAD (if the commit was pushed to a remote repo, this creates a new commit that reverses the last one)
+git log (to view log)
+git checkout <branch> (to move to a branch)
+git branch (to check all the branch)
+git branch <name> ( to create branch)
+git checkout <log id> (to switch to different version of commit)
+>>>>>>> development
