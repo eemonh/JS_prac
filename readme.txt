@@ -17,3 +17,6 @@ git branch (to check all the branch)
 git branch <name> ( to create branch)
 git checkout <log id> (to switch to different version of commit)
 >>>>>>> development
+
+
+developer.mozilla.org for use case and info about javascript
